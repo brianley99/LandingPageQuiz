@@ -39,7 +39,7 @@ body {
     flex-shrink: 0;
     text-align: center;
     position: relative;
-    top: 500px;
+    top: 800px;
 }
 
 /* ----- NAVBAR ----- */
@@ -58,7 +58,7 @@ main .container {
     align-items: end;
     justify-content: center;
     position: relative;
-    top: 500px;
+    top: 800px;
 }
 
 .cta h1 {
@@ -79,7 +79,7 @@ main .container {
 /* // No media query for `xs` since this is the default in Bootstrap */
 body {
     background-image: url(/img/LandingPage/LandingPage_576.png);
-    background-position: center center;
+    background-position: top center;
 }
 
 .cta h1 {
@@ -121,7 +121,6 @@ body {
     body {
         background-image: url(/img/LandingPage/LandingPage_992.png);
     }
-
 }
 
 /* // Large devices (desktops, 992px and up) */
