@@ -1,3 +1,10 @@
+/* Google Fonts */
+/* 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Roboto', sans-serif; 
+*/
+
 :root {
     --cf-dark: #212121;
     --cf-light: #ebebeb;
@@ -9,14 +16,19 @@
 html,
 body {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav,
+footer {
+    color: var(--cf-light);
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
     background-repeat: no-repeat;
+    background-color: var(--cf-darkblue);
 }
 
 .content {
@@ -25,4 +37,128 @@ body {
 
 .footer {
     flex-shrink: 0;
+    text-align: center;
+    position: relative;
+    top: 500px;
 }
+
+/* ----- NAVBAR ----- */
+nav img {
+    height: 2em;
+}
+
+/* ----- END NAVBAR ----- */
+
+
+/* ----- MAIN ----- */
+main .container {
+    color: var(--cf-light);
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    top: 500px;
+}
+
+.cta h1 {
+    font-family: 'Racing Sans One', cursive;
+    text-transform: uppercase;
+}
+
+.cta p {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ----- END MAIN ----- */
+
+
+/* ----- MEDIA QUERIES ----- */
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+body {
+    background-image: url(/img/LandingPage/LandingPage_576.png);
+    background-position: center center;
+}
+
+.cta h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    line-height: .5rem;
+    letter-spacing: .02rem;
+}
+
+.cta .btn {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        background-image: url(/img/LandingPage/LandingPage_768.png);
+    }
+
+    .cta h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+    .cta p {
+        font-size: 1.4rem;
+        line-height: 1rem;
+        letter-spacing: .14rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url(/img/LandingPage/LandingPage_992.png);
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(/img/LandingPage/LandingPage_1200.png);
+        background-position: center right;
+        background-size: cover;
+    }
+
+    main .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        top: 0px;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        text-align: center;
+        position: relative;
+        top: 0px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(/img/LandingPage/LandingPage_1400.png);
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(/img/LandingPage/LandingPage_1920.png);
+    }
+}
+
+/* ----- END MEDIA QUERIES ----- */
